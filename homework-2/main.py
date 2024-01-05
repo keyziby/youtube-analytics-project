@@ -1,7 +1,8 @@
 from src.channel import Channel
 
 if __name__ == '__main__':
-    mr_bst = Channel('UCX6OQ3DkcsbYNE6H8uQQuVA')
+    mr_bst = Channel()
+    mr_bst.id = 'UCX6OQ3DkcsbYNE6H8uQQuVA'
 
     # получаем значения атрибутов
     print(mr_bst.title)  # MoscowPython
