@@ -6,7 +6,7 @@ if __name__ == '__main__':
 
     # получаем значения атрибутов
     print(mr_bst.title)  # MoscowPython
-    print(mr_bst.video_count)  # 685 (может уже больше)
+    print(mr_bst.video_count())  # 685 (может уже больше)
     print(mr_bst.url)  # https://www.youtube.com/channel/UC-OVMPlMA3-YCIeg4z5z23A
 
     # менять не можем

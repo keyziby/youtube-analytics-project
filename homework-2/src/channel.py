@@ -5,8 +5,6 @@ from googleapiclient.discovery import build
 
 
 class Channel:
-    def __init__(self):
-        self.title = None
 
     """Класс для ютуб-канала"""
 
