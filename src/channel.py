@@ -47,13 +47,13 @@ class Channel:
     def get_service(cls):
         return build('youtube', 'v3', developerKey=cls.api_key)
     def __str__(self):
-        return f"'{self.title}(https://www.youtube.com/channel/{self.__channel_id})'"
+        return f"'{self.title}({self.__channel_id})'"
 
     def __add__(self, other):
         return self.subscriberCount + other.subscriberCount
 
     def __sub__(self, other):
-        return self.subscriberCount - other.subscriberCount and other.subscriberCount - self.subscriberCount
+        return self.subscriberCount - other.subscriberCount
 
     def __lt__(self, other):
         return self.subscriberCount < other.subscriberCount
